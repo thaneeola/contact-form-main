@@ -118,9 +118,9 @@ button:hover{
     background-color: var(--Grey-900-darker);
 }
 .success{
-    display: none;
+    /* display: none; */
     background-color: var(--Grey-900-darker);
-    width: 30%;
+    width: 300px;
     font-size: 13px;
   font-weight: 200;
     padding-inline: 30px;
@@ -144,7 +144,11 @@ button:hover{
 
 @media (width>=425px) {
   main {
+    
     width: 90%;
+  }
+  .success{
+    width: 400px;
   }
 }
 @media (width>=640px) {
