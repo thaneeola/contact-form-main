@@ -117,6 +117,30 @@ button{
 button:hover{
     background-color: var(--Grey-900-darker);
 }
+.success{
+    display: none;
+    background-color: var(--Grey-900-darker);
+    width: 30%;
+    font-size: 13px;
+  font-weight: 200;
+    padding-inline: 30px;
+    padding-block: 10px;
+    color: white;
+    border-radius: 8px;
+    line-height: 30px;
+    margin: auto;
+    
+}
+.first{
+     display: flex;
+     gap: 5px;
+     font-weight: bold;
+    align-items: center;
+}
+.first span {
+    color: white;
+    font-weight: 200;
+}
 
 @media (width>=425px) {
   main {
