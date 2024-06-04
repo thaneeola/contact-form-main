@@ -68,11 +68,7 @@ span {
   border-color: var(--Green-600-medium);
   cursor: pointer;
 }
-/* .text:focus, #textarea:focus{
-  border-color: var(--Green-600-medium);
-  cursor: pointer;
-  outline: none;
-} */
+
 .required-text {
   color: var(--Red);
   visibility: hidden;
