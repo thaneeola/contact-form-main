@@ -35,47 +35,53 @@
         <fieldset>
           <label for="first-name">
             <p>First Name <span>*</span></p>
-            <input type="text" id="first-name" class="text" required />
-            <p class="required-text">This field is required</p>
+            <input type="text" id="first-name" class="text"/>
+            <p class="required-text">Please fill out this field</p>
           </label>
 
           <label for="last-name">
             <p>last Name <span>*</span></p>
-            <input type="text" id="last-name" class="text" required />
-            <p class="required-text">This field is required</p>
+            <input type="text" id="last-name" class="text"/>
+            <p class="required-text1">Please fill out this field</p>
           </label>
         </fieldset>
 
         <label for="email">
           <p>Email Address <span>*</span></p>
-          <input type="email" id="email" class="text" required />
-          <p class="required-text">Please enter a valid email address</p>
+          <input type="email" id="email" class="text"/>
+          <p class="required-text2">Please enter a valid email address</p>
         </label>
         <p>Enquiry<span>*</span></p>
         <fieldset>
-          <label for="radio1" class="radio1">
-            <input type="radio" id="radio1" name="radio" required />
+          <label for="radio1 radio" class="radio1">
+            <input type="radio" id="radio1 radio" name="radio"/>
             <p>General Enquiry</p>
           </label>
-          <label for="radio2" class="radio2">
-            <input type="radio" id="radio2" name="radio" required />
+          <label for="radio2 radio" class="radio2">
+            <input type="radio" id="radio2 radio" name="radio" />
             <p>Support Request</p>
           </label>
-          <p class="required-text">Please select a query type</p>
         </fieldset>
+        <p class="required-text3">Please select a query type</p>
 
         <p class="mass">Message <span>*</span></p>
         <label for="textarea" class="textarea">
           <textarea id="textarea"></textarea>
 
-          <p class="required-text">Please select a query type</p>
+          <p class="required-text4">Please select a query type</p>
         </label>
 
-        <div class="check">
-          <input type="checkbox" required />
-          <p>I consent to being contacted by the team <span>*</span></p>
-        </div>
-        <button class="button">Submit</button>
+      
+          <label for="checkbox" class="check">
+            <input type="checkbox" id="checkbox"/>
+            <p >I consent to being contacted by the team <span>*</span></p>
+          </label>
+       
+
+        
+        <p class="required-text5">Please select a query type</p>
+        
+        <button class="button" type="submit">Submit</button>
       </form>
     </main>
 <script src="main.js"></script>

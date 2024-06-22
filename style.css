@@ -38,7 +38,7 @@ main {
 h1 {
   margin-bottom: 30px;
 }
-fieldset{
+fieldset {
   border: none;
   display: flex;
   width: 100%;
@@ -47,6 +47,7 @@ fieldset{
 }
 input:not([type="radio"]):not([type="checkbox"]) {
   margin-top: 10px;
+  font-size: inherit;
 }
 
 label {
@@ -55,8 +56,9 @@ label {
 span {
   color: var(--Green-600-medium);
 }
-.text,.radio1,.radio2
- {
+.text,
+.radio1,
+.radio2 {
   width: 100%;
   height: 20px;
   border-radius: 8px;
@@ -69,86 +71,103 @@ span {
   cursor: pointer;
 }
 
-.required-text {
+.required-text,
+.required-text1,
+.required-text2,
+.required-text3,
+.required-text4,
+.required-text5 {
   color: var(--Red);
-  visibility: hidden;
+  display: none;
 }
-.radio1,.radio2{
-    display: flex;
-    align-items: center;
-   gap: 10px;
-   margin-top: 20px;
+.radio1,
+.radio2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-.radio1:active,.radio2:active,#textarea:focus,.text:focus{
-    border-color: var(--Green-600-medium);
-    background: var(--Green-200-lighter);
-    cursor: pointer;
-    outline: none;
+.radio1:active,
+.radio2:active,
+#textarea:focus,
+.text:focus {
+  border-color: var(--Green-600-medium);
+  background: var(--Green-200-lighter);
+  cursor: pointer;
+  outline: none;
 }
-input[type="radio"]:checked, input[type="checkbox"]:checked {
-    accent-color:  var(--Green-600-medium);;
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  accent-color: var(--Green-600-medium);
 }
-.mass{
-    margin-top: 16px;
+.mass {
+  margin-top: 16px;
 }
-#textarea{
-    border:1px solid var(--Grey-500-medium) ;
-    width: 100%;
-   margin-top: 10px;
-    height: 100px;
-    resize: none;
-    padding: 20px;
-    border-radius: 8px;
+#textarea {
+  border: 1px solid var(--Grey-500-medium);
+  width: 100%;
+  margin-top: 10px;
+  height: 100px;
+  resize: none;
+  padding: 20px;
+  border-radius: 8px;
 }
-.check{
-    display: flex;
-    gap: 10px;
+.check {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
 }
-button{
-    width: 100%;
-    padding: 20px;
-    border: none;
-   margin-top: 20px;
-    color: white;
-    border-radius: 8px;
-    background-color: var(--Green-600-medium);
+button {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  margin-top: 20px;
+  font-size: inherit;
+  color: white;
+  border-radius: 8px;
+  background-color: var(--Green-600-medium);
 }
-button:hover{
-    background-color: var(--Grey-900-darker);
+button:hover {
+  background-color: var(--Grey-900-darker);
 }
-.success{
-    /* display: none; */
-    background-color: var(--Grey-900-darker);
-    width: 300px;
-    font-size: 13px;
+.success {
+  display: none;
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+
+  background-color: var(--Grey-900-darker);
+  width: 380px;
+  font-size: 13px;
   font-weight: 200;
-    padding-inline: 30px;
-    padding-block: 10px;
-    color: white;
-    border-radius: 8px;
-    line-height: 30px;
-    margin: auto;
-    
+  padding-inline: 30px;
+  padding-block: 10px;
+  color: white;
+  border-radius: 8px;
+  line-height: 30px;
+  margin: auto;
 }
-.first{
-     display: flex;
-     gap: 5px;
-     font-weight: bold;
-    align-items: center;
+.first {
+  display: flex;
+  gap: 5px;
+  font-weight: bold;
+  align-items: center;
 }
 .first span {
-    color: white;
-    font-weight: 200;
+  color: white;
+  font-weight: 200;
 }
 
+@media (width<=408px) {
+  .success {
+    width: 280px;
+  }
+}
 @media (width>=425px) {
   main {
-    
     width: 90%;
-  }
-  .success{
-    width: 400px;
   }
 }
 @media (width>=640px) {
@@ -169,7 +188,6 @@ button:hover{
       width: 100%;
     }
   }
-
 }
 @media (width>=1440px) {
   main {
