@@ -52,7 +52,8 @@ form.addEventListener("submit", (event) => {
   }
  
 });
-alert()
+
+
 // const required = document.querySelector(".required-text")
 // let input = document.querySelector("#last-name")
 // let button = document.querySelector("button")
